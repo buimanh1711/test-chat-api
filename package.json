@@ -10,12 +10,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.21.1",
     "cloudinary": "^1.25.1",
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-fileupload": "^1.2.1",
-    "firebase-admin": "^9.11.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.12.4",
     "mongoose-slug-generator": "^1.0.4"
