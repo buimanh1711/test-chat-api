@@ -1,4 +1,5 @@
 
+
 module.exports = sendMessage = (req, res, next) => {
   var data = req.body
 
@@ -8,8 +9,9 @@ module.exports = sendMessage = (req, res, next) => {
     req.err = 'Send message failed!'
     return next('last')
   }
+  
+  console.log('chat user-id: ', userId)
 
-  console.log('user-id: ', userId)
 
   res.json({
     status: true,

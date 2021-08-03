@@ -1,9 +1,10 @@
 const express = require('express')
-const sendMessage = require('../apis/message/sendMessage')
 const getAllUsers = require('../apis/user/getAllUsers')
+const createUser = require('../apis/user/createUser')
+
 const router = express.Router()
 
-router.post('/', sendMessage)
 router.get('/', getAllUsers)
+router.post('/', createUser)
 
 module.exports = router

@@ -22,7 +22,7 @@ const validateCaptcha = (req, res, next) => {
   })
     .then(response => {
       if (response.data.success) {
-        console.log(response.data)
+        console.log('captcha validate: ', response.data)
         res.json({
           status: true,
           message: 'Validate successfully!',
