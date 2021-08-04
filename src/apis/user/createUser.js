@@ -7,7 +7,6 @@ module.exports = createUser = (req, res, next) => {
   console.log('current user: ', userId)
   try {
     // var users = db.getData('/users')
-
     // if (users?.length > 0) {
     //   let check = users.findIndex(user => user === userId)
     //   if (check == -1) {
