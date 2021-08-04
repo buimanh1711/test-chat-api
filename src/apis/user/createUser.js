@@ -17,13 +17,14 @@ module.exports = createUser = (req, res, next) => {
       db.push('/users[]', userId, true)
     }
 
-  } catch (error) {
-    console.log(error)
-  }
 
-  res.json({
-    status: true,
-    message: 'created user',
-    user: userId
-  })
+    res.json({
+      status: true,
+      message: 'created user',
+      user: userId
+    })
+
+  } catch (error) {
+    next(error)
+  }
 }
